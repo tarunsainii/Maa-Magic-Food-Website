@@ -1,0 +1,192 @@
+@media screen and (max-width: 1120px) {
+
+    /* Sidebar menu  */
+    #sidebar {
+        height: 100%;
+        width: 45%;
+        padding: 20px 0 0 20px;
+        margin-top: 95px;
+        display: block;
+        position: fixed;
+        z-index: 5;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.63);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    #open-sidebar:checked ~ #sidebar {
+        transform: translateX(0px);
+    }
+    #sidebar ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        margin-left: 10px;
+    }
+    #sidebar ul li {
+        list-style: none;
+        font-size: 1.2rem;
+        margin: 20px 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.229);
+    }
+    
+    #sidebar ul li a {
+        display: block;
+        text-decoration: none;
+        padding-left: 10px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+    
+    #sidebar ul li a:hover {
+        padding-left: 15px;
+    }
+    #open-sidebar {
+        position: fixed;
+        right: 0;
+        z-index: 8;
+        display: none;
+    }
+    .sidebar-icon {
+        cursor: pointer;
+        margin-right: 52px;
+        margin-top: 23px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        z-index: 8;
+        position: fixed;
+        right: 0;
+        background-color: transparent;
+    }
+
+    /* Navbar  */
+    
+    .nav-logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-logo p {
+        margin-left: 60px;
+        font-size: 0.9rem;
+    }
+    .nav-logo h1 {
+        font-size: 2rem;
+    }
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 50px;
+        font-size: 1.6rem;
+        color: white;
+        height: 52px;
+        width: 52px;
+        border: 2px solid rgba(255, 255, 255, 0.449);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #navbar ul {
+        display: none;
+    }
+
+    /* Home Section  */
+    
+    #home {
+        padding: 90px 100px 0px 100px;
+        height: 400px;
+    }
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+    .button {
+        margin-top: 30px;
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    /* Services  */
+
+    .services-box {
+        flex-direction: column;
+        margin: 0px;
+    }
+    .box {
+        height: 400px;
+        width: 75%;
+        margin-top: 20px;
+    }
+    
+    /* how it works  */
+
+    .working {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 75%;
+        margin: 0;
+        margin-bottom: -85px;
+    }
+
+    /* Satisfied customer */
+
+    .cust-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    #customer h1 {
+        margin: 30px 0px 40px 0px;
+    }
+    
+    .cust-box h2 {
+        margin-bottom: 5px;
+    }
+    .boxx {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Contact us */
+    
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .box-spacing {
+        width: 80%;
+        padding-bottom: 40px;
+    }
+    .cont-right input, #message {
+        width: 100%;
+    }
+    .cont-left h1{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .cont-left p{
+        font-size: 1.2rem;
+    }
+
+    /* Footer  */
+
+    .foot-places {
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+    
+    .foot-places p {
+        margin: 0 10px;
+    }
+
+}
